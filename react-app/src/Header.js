@@ -1,9 +1,10 @@
 import React from "react";
-
+import troll from "./troll-face.png";
 function Header() {
   return (
-    <div>
-      <h1 className="header">MemeGenerator</h1>
+    <div className="header">
+      <img className="header-img" src={troll} alt="" />
+      <h1 className="header--text">Memify</h1>
     </div>
   );
 }
