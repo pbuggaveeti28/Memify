@@ -1,7 +1,7 @@
 import React from "react";
 import memeData from "./memeData.js";
 
-function Meme() {
+export default function Meme() {
   const [memeImage, setMemeImage] = React.useState("");
   function getMeme() {
     const memesArray = memeData.data.memes;
@@ -10,7 +10,6 @@ function Meme() {
   }
   return (
     <main>
-      <p>{url}</p>
       <div className="form">
         <input type="text" className="form-input" placeholder="Shut up" />
 
@@ -20,9 +19,7 @@ function Meme() {
           Get a new meme🖼️
         </button>
       </div>
-      <img src={memeImage} className="meme" />
+      <img src={memeImage} className="meme-image" />
     </main>
   );
 }
-
-export default Meme;

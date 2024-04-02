@@ -26,7 +26,7 @@ main {
 }
 .form{
     display: grid;
-    grid-template: 100% 100% / 1fr 1fr;
+    grid-template: 40px 40px / 1fr 1fr;
     gap: 17px;
 }
 /* .form-label {
@@ -47,4 +47,9 @@ main {
     color: white;
     cursor: pointer;
     border-radius: 5px;
+}
+.meme-image{
+   max-width: 100%;
+   height: auto;
+   overflow: hidden;
 }
